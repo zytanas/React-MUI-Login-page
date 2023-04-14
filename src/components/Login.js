@@ -29,7 +29,6 @@ const Login = () => {
                 </Button>
 
                 <Typography textAlign="center" fontSize={'14px'}>
-                    <SignUp />
                 </Typography>
             </Paper>
         </Grid>
