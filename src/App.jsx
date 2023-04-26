@@ -1,5 +1,6 @@
 import { Grid,createTheme, ThemeProvider, } from '@mui/material';
 import Login from './components/Login';
+import { Fragment } from 'react';
 
 
 const mytheme = createTheme({
@@ -16,6 +17,8 @@ const mytheme = createTheme({
       },
       text: {
           primary: '#ffffff',
+          warning:'#e60505',
+          pending:'#e68005',
           fontSize: 22,
           fontWeight: 'bold'
       },
@@ -25,6 +28,9 @@ const mytheme = createTheme({
       action: {
           hover: '#ba5b5b',
       },
+      borderColor:{
+        main:"#a393e6"
+      }
   },
 });
 
@@ -32,9 +38,9 @@ const mytheme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={mytheme}>
-    <div className="App">
+    <Fragment>
      <Login/>
-    </div>
+     </Fragment>
     </ThemeProvider>
   );
 }
